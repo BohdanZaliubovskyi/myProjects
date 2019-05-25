@@ -1,0 +1,7 @@
+﻿@model Profiles.Models.ArgsModel
+</br>
+@ViewBag.Message
+
+</br>
+@Html.DropDownList("args", Model.Args as SelectList,
+                            htmlAttributes: new { @class = "form-control" })
